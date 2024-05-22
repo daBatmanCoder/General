@@ -1,4 +1,4 @@
-# General Repository by Jonathan Kandel
+# General Repository by daBatmanCoder
 
 ## Table of Contents
 
@@ -8,7 +8,7 @@
 
 ## Introduction
 
-    This repository is a collection of random tests and experiments. It serves as a sandbox for trying out various ideas and concepts. Feel free to explore the different files and folders to see what experiments have been conducted.
+This repository is a collection of random tests and experiments. It serves as a sandbox for trying out various ideas and concepts. Feel free to explore the different files and folders to see what experiments have been conducted.
 
 ## Contents
 
@@ -30,4 +30,4 @@ Just clone.
 
 ## License
 
-&copy; All right reserved to Jonathan Kandel.
+&copy; All right reserved to JK
