@@ -5,6 +5,8 @@
 - [Introduction](#introduction)
 - [Contents](#contents)
     - [x25519 Exchange Algorithm](#x25519-exchange-algorithm)
+    - [Symmetric Encrypt Decrypt](#Symmetric-encrypt-decrypt)
+
 
 ## Introduction
 
@@ -18,7 +20,15 @@ This file contains the implementation of the x25519 key exchange algorithm in Py
 
 The x25519 algorithm is a key agreement protocol that allows two parties to establish a shared secret over an insecure channel. It is based on elliptic curve Diffie-Hellman (ECDH) and uses the Curve25519 elliptic curve.
 
+### Symmetric Encrypt Decrypt
 
+This Python script provides functions for encryption and decryption of data using a password-based key.
+
+The derive_key function generates a cryptographic key from a given password and a salt using the Scrypt key derivation function.
+
+The encrypt_data function encrypts data using the derived key from a password. It generates a random salt and nonce, creates an AES-GCM cipher with the derived key and nonce, and then encrypts the data. It returns the encrypted data, salt, encryption tag, and nonce.
+
+The decrypt_data function decrypts data using the derived key from a password. It creates an AES-GCM cipher with the derived key, nonce, and encryption tag, and then decrypts the data. It returns the decrypted data.
 
 ## Getting Started
 

@@ -1,18 +1,13 @@
-from Crypto.Hash import SHA256
-from eth_keys import keys
-from eth_hash.auto import keccak
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.scrypt import Scrypt
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
-import os
+from eth_keys import keys
+from eth_hash.auto import keccak
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from hashlib import sha256
 import hashlib
-import requests
-import io
+import os
 
 def hash_function(input_string, salt=b""):
     # Hash the input string using SHA256
