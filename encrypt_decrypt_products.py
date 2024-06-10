@@ -9,6 +9,7 @@ from hashlib import sha256
 import hashlib
 import os
 
+
 def hash_function(input_string, salt=b""):
     # Hash the input string using SHA256
     prefix = "\x19Ethereum Signed Message:\n";
